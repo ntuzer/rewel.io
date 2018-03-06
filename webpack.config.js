@@ -1,16 +1,17 @@
-// webpack.config.js
-var path = require('path');
 
+var path = require("path");
 module.exports = {
-  entry: './frontend/entry.jsx',
+  context: __dirname,
+  entry: "./frontend/entry.jsx",
   output: {
-    filename: './bundle.js',
+    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
+    filename: "bundle.js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: [/\.jsx?$/, /\.js?$/],
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           presets: ['env', 'react']
@@ -20,6 +21,6 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '*']
+    extensions: [".js", ".jsx", "*"]
   }
 };
