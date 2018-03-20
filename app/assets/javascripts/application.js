@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing
 //= require rails-ujs
 //= require_tree .

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 
+
 document.addEventListener('DOMContentLoaded', () => {
   // console.log('entry file');
   const root = document.getElementById('root');
