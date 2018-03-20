@@ -96,7 +96,7 @@ class Navbar extends React.Component {
         </div>
       </div>
       <div className="ac_footer">
-                 <p className="footer-text">©Copyright 2018 • All Rights Reserved • San Francisco • Atlanta • rewel@companyname.com • (213) 555-2860</p>
+                 <p className="footer-text">©Copyright 2018 • All Rights Reserved • San Francisco • Atlanta • rewel@rewel.io</p>
       </div>
 
 
