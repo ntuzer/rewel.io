@@ -39,6 +39,7 @@
 
 var path = require("path");
 var webpack = require("webpack");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var plugins = []; // if using any plugins for both dev and production
 var devPlugins = []; // if using any plugins for development
@@ -49,11 +50,19 @@ var prodPlugins = [
       'NODE_ENV': JSON.stringify('production')
     }
   }),
-  new webpack.optimize.UglifyJsPlugin({
-    compress: {
-      warnings: true
-    }
-  })
+  // new UglifyJSPlugin({
+  //       uglifyOptions: {
+  //         warning: "verbose",
+  //         ecma: 6,
+  //         beautify: false,
+  //         compress: false,
+  //         comments: false,
+  //         mangle: false,
+  //         toplevel: false,
+  //         keep_classnames: true,
+  //         keep_fnames: true
+  //       }
+  //     })
 ];
 
 plugins = plugins.concat(
@@ -96,5 +105,40 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: [".js", ".jsx", "*"]
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJSPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false
+          },
+          compress: {
+            unsafe_comps: true,
+            properties: true,
+            keep_fargs: false,
+            pure_getters: true,
+            collapse_vars: true,
+            unsafe: true,
+            warnings: false,
+            screw_ie8: true,
+            sequences: true,
+            dead_code: true,
+            drop_debugger: true,
+            comparisons: true,
+            conditionals: true,
+            evaluate: true,
+            booleans: true,
+            loops: true,
+            unused: true,
+            hoist_funs: true,
+            if_return: true,
+            join_vars: true,
+            cascade: true,
+            drop_console: true
+          }
+        }
+      }),
+    ]
   }
 };
