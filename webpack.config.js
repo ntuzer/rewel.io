@@ -1,45 +1,5 @@
-//
-// var path = require("path");
-// module.exports = {
-//   context: __dirname,
-//   entry: "./frontend/entry.jsx",
-//   output: {
-//     path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-//     filename: "bundle.js"
-//   },
-//   module: {
-//     rules: [
-//       {
-//         test: [/\.jsx?$/, /\.js?$/],
-//         exclude: /node_modules/,
-//         loader: 'babel-loader',
-//         query: {
-//           presets: ['env', 'react']
-//         }
-//       },
-//       {
-//         // The important stuff
-//         test: /\.(jpg|jpeg|png|ico|gif)(\?.*)?$/, // Load only .jpg .jpeg, and .png files
-//         use: {
-//           loader: 'file-loader',
-//           options: {
-//             name: '[name][md5:hash].[ext]', // Name of bundled asset
-//             outputPath: '/images/', // Output location for assets. Final: `app/assets/webpack/webpack-assets/`
-//             publicPath: '/assets/' // Endpoint asset can be found at on Rails server
-//           }
-//         }
-//       }
-//     ]
-//   },
-//   devtool: 'source-map',
-//   resolve: {
-//     extensions: [".js", ".jsx", "*"]
-//   }
-// };
-
 var path = require("path");
 var webpack = require("webpack");
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var plugins = []; // if using any plugins for both dev and production
 var devPlugins = []; // if using any plugins for development
@@ -50,19 +10,11 @@ var prodPlugins = [
       'NODE_ENV': JSON.stringify('production')
     }
   }),
-  // new UglifyJSPlugin({
-  //       uglifyOptions: {
-  //         warning: "verbose",
-  //         ecma: 6,
-  //         beautify: false,
-  //         compress: false,
-  //         comments: false,
-  //         mangle: false,
-  //         toplevel: false,
-  //         keep_classnames: true,
-  //         keep_fnames: true
-  //       }
-  //     })
+  new webpack.optimize.UglifyJsPlugin({
+    compress: {
+      warnings: true
+    }
+  })
 ];
 
 plugins = plugins.concat(
@@ -72,7 +24,7 @@ plugins = plugins.concat(
 // include plugins config
 module.exports = {
   context: __dirname,
-  entry: "./frontend/entry.jsx",
+  entry: "./frontend/eventide.jsx",
   output: {
     path: path.resolve(__dirname, "app", "assets", "javascripts"),
     filename: "bundle.js"
@@ -105,6 +57,5 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: [".js", ".jsx", "*"]
-  },
-  optimization: false
+  }
 };
