@@ -14,7 +14,7 @@ class Navbar extends React.Component {
     return (
     <div>
       <div id="ac_background" ref="ac_background" className="ac_background">
-        <img className="ac_bgimage" src="/assets/bg/bg1.jpg" alt="Background"/>
+        <img className="ac_bgimage" src="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg" alt="Background"/>
         <div className="ac_overlay"></div>
         <div className="ac_loading"></div>
       </div>
@@ -25,7 +25,7 @@ class Navbar extends React.Component {
           <ul>
 
                            <li>
-              <a href="assets/bg/bg2.jpg">About Me</a>
+              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg">About Me</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>About Me</h2>
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
 
 
                            <li>
-              <a href="assets/bg/bg6.jpg">EvenTide</a>
+              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg">EvenTide</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>EvenTide</h2>
@@ -71,19 +71,6 @@ class Navbar extends React.Component {
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>Write Away</h2>
-                <ul>
-                  <li>Placeholder.</li>
-                  <li>Placeholder</li>
-                  <li>Placeholder</li>
-                </ul>
-              </div>
-            </li>
-
-                           <li>
-              <a href="assets/bg/bg7.jpg">Delete Me</a>
-              <div className="ac_subitem">
-                <span className="ac_close"></span>
-                <h2>Location</h2>
                 <ul>
                   <li>Placeholder.</li>
                   <li>Placeholder</li>
