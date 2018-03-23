@@ -25,7 +25,7 @@ class Navbar extends React.Component {
           <ul>
 
                            <li>
-              <a href="assets/images/bg/bg1.jpg">About Me</a>
+              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg">About Me</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>About Me</h2>
@@ -54,7 +54,7 @@ class Navbar extends React.Component {
             </li>
 
                            <li>
-              <a href="assets/bg/bg5.jpg">3D Cube</a>
+              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg5.jpg">3D Cube</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>3D Cube</h2>
@@ -67,7 +67,7 @@ class Navbar extends React.Component {
             </li>
 
                            <li>
-              <a href="assets/bg/bg8.jpg">Write Away</a>
+              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg">Write Away</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>Write Away</h2>

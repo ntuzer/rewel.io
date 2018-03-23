@@ -25793,7 +25793,7 @@ var Navbar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: 'assets/images/bg/bg1.jpg' },
+                  { href: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg' },
                   'About Me'
                 ),
                 _react2.default.createElement(
@@ -25874,7 +25874,7 @@ var Navbar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: 'assets/bg/bg5.jpg' },
+                  { href: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg5.jpg' },
                   '3D Cube'
                 ),
                 _react2.default.createElement(
@@ -25912,7 +25912,7 @@ var Navbar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: 'assets/bg/bg8.jpg' },
+                  { href: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg' },
                   'Write Away'
                 ),
                 _react2.default.createElement(
