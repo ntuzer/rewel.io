@@ -132,7 +132,7 @@ class Navbar extends React.Component {
         $ItemImages.push($(this).children('a:first').attr('href'));
       });
       $ItemImages.push($ac_bgimage.attr('src'));
-console.log($ac_background);
+
 
       var Menu 			= (function(){
         var init				= function() {
