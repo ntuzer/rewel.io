@@ -25793,7 +25793,7 @@ var Navbar = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg' },
+                  { href: 'assets/images/bg/bg1.jpg' },
                   'About Me'
                 ),
                 _react2.default.createElement(

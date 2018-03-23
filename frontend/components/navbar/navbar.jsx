@@ -25,7 +25,7 @@ class Navbar extends React.Component {
           <ul>
 
                            <li>
-              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg1.jpg">About Me</a>
+              <a href="assets/images/bg/bg1.jpg">About Me</a>
               <div className="ac_subitem">
                 <span className="ac_close"></span>
                 <h2>About Me</h2>
