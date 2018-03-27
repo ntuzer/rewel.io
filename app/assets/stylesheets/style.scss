@@ -211,3 +211,31 @@ span.ac_close:hover{
 .ac_footer a.ac_left{
 	float:left;
 }
+
+.headzone{
+	display: flex;
+	flex-direction: row;
+}
+
+.selfie {
+	height:200px;
+	width:auto;
+}
+
+.resume {
+	color: white;
+}
+
+
+.ac_menu > ul > li div ul div ul a {
+	color:white;
+}
+.linkedin {
+	color: white;
+
+}
+
+.github {
+	color: white;
+
+}

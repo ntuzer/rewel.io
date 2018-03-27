@@ -25814,19 +25814,9 @@ var Navbar = function (_React$Component) {
                       'Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.'
                     ),
                     _react2.default.createElement(
-                      'a',
-                      { className: 'li-links', href: '//www.github.com/ntuzer', target: '_blank' },
-                      'GitHub'
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
+                      'div',
+                      { className: 'headzone' },
+                      _react2.default.createElement('img', { className: 'selfie', src: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg' })
                     )
                   )
                 )

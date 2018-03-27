@@ -31,9 +31,10 @@ class Navbar extends React.Component {
                 <h2>About Me</h2>
                 <ul>
                   <li>Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.</li>
-                  <a className="li-links" href="//www.github.com/ntuzer" target="_blank">GitHub</a>
-                  <li>Placeholder</li>
-                  <li>Placeholder</li>
+                  <div className="headzone">
+                    <img className="selfie" src="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg"></img>
+
+                  </div>
                 </ul>
               </div>
             </li>
