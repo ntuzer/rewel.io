@@ -30,7 +30,7 @@ class Navbar extends React.Component {
                 <span className="ac_close"></span>
                 <h2>About Me</h2>
                 <ul>
-                  <li>Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.</li>
+                  <li className="fC">Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.</li>
                   <div className="headzone">
                     <img className="selfie" src="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg"></img>
 
@@ -47,9 +47,16 @@ class Navbar extends React.Component {
                 <span className="ac_close"></span>
                 <h2>EvenTide</h2>
                 <ul>
-                  <li>EvenTide is a event scheduling app inspired by Eventbrite. It is a web app created from the ground up using React and Redux with a Rails backend.</li>
-                  <li><a href="https://eventide-eventbrite-clone.herokuapp.com" color="white">Live</a></li>
-                  <li><a href="https://github.com/ntuzer/EvenTide" color="white">Github</a></li>
+                  <li className="fC">EvenTide is a event scheduling app inspired by Eventbrite. It is a web app created from the ground up using React and Redux with a Rails backend.</li>
+                  <div className="headzone">
+                    <ul>
+                      <li><a href="https://eventide-eventbrite-clone.herokuapp.com" color="white">Live</a></li>
+                      <li><a href="https://github.com/ntuzer/EvenTide" color="white">Github</a></li>
+                    </ul>
+                    <div>
+                      <img>placeholder</img>
+                    </div>
+                  </div>
                 </ul>
               </div>
             </li>
@@ -60,9 +67,16 @@ class Navbar extends React.Component {
                 <span className="ac_close"></span>
                 <h2>3D Cube</h2>
                 <ul>
-                  <li>Placeholder.</li>
-                  <li>Placeholder</li>
-                  <li>Placeholder</li>
+                  <li className="fC">Placeholder.</li>
+                  <div className="headzone">
+                    <ul>
+                      <li><a href="https://ntuzer.github.io/3D-Cube">Live</a></li>
+                      <li><a href="https://github.com/ntuzer/3D-Cube">Github</a></li>
+                    </ul>
+                    <div>
+                      <img>placeholder</img>
+                    </div>
+                  </div>
                 </ul>
               </div>
             </li>
@@ -73,7 +87,7 @@ class Navbar extends React.Component {
                 <span className="ac_close"></span>
                 <h2>Write Away</h2>
                 <ul>
-                  <li>Placeholder.</li>
+                  <li className="fC">Placeholder.</li>
                   <li>Placeholder</li>
                   <li>Placeholder</li>
                 </ul>

@@ -3675,7 +3675,7 @@ var Navbar = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'li',
-                      null,
+                      { className: 'fC' },
                       'Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.'
                     ),
                     _react2.default.createElement(
@@ -3708,25 +3708,42 @@ var Navbar = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'li',
-                      null,
+                      { className: 'fC' },
                       'EvenTide is a event scheduling app inspired by Eventbrite. It is a web app created from the ground up using React and Redux with a Rails backend.'
                     ),
                     _react2.default.createElement(
-                      'li',
-                      null,
+                      'div',
+                      { className: 'headzone' },
                       _react2.default.createElement(
-                        'a',
-                        { href: 'https://eventide-eventbrite-clone.herokuapp.com', color: 'white' },
-                        'Live'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'https://eventide-eventbrite-clone.herokuapp.com', color: 'white' },
+                            'Live'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'https://github.com/ntuzer/EvenTide', color: 'white' },
+                            'Github'
+                          )
+                        )
+                      ),
                       _react2.default.createElement(
-                        'a',
-                        { href: 'https://github.com/ntuzer/EvenTide', color: 'white' },
-                        'Github'
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                          'img',
+                          null,
+                          'placeholder'
+                        )
                       )
                     )
                   )
@@ -3754,18 +3771,43 @@ var Navbar = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'li',
-                      null,
+                      { className: 'fC' },
                       'Placeholder.'
                     ),
                     _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
+                      'div',
+                      { className: 'headzone' },
+                      _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'https://ntuzer.github.io/3D-Cube' },
+                            'Live'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          _react2.default.createElement(
+                            'a',
+                            { href: 'https://github.com/ntuzer/3D-Cube' },
+                            'Github'
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                          'img',
+                          null,
+                          'placeholder'
+                        )
+                      )
                     )
                   )
                 )
@@ -3792,7 +3834,7 @@ var Navbar = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                       'li',
-                      null,
+                      { className: 'fC' },
                       'Placeholder.'
                     ),
                     _react2.default.createElement(

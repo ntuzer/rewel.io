@@ -120,7 +120,7 @@ img.ac_bgimage{
 	float:left;
 	position:relative;
 	height:90px;
-	overflow:hidden;
+	overflow:hidden;//RGJR
 }
 .li-links {
 	margin:10px 0px;
@@ -148,7 +148,7 @@ img.ac_bgimage{
 	margin-top:0px; /* animate to -200px */
 	position:fixed;
 	z-index:99;
-	overflow:hidden;
+	overflow:hidden; //RGJR
 	background:transparent url(https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg_menu.png) repeat top left;
 }
 
@@ -156,7 +156,7 @@ img.ac_bgimage{
 	font-size:22px;
 	font-weight:bold;
 	color:#fff;
-	padding: 40px 0px 0px 40px;
+	padding: 25px 0px 0px 40px;
 	text-shadow:0px 0px 1px #000;
 }
 .ac_subitem ul{
@@ -165,12 +165,13 @@ img.ac_bgimage{
 .ac_subitem ul li{
 	margin:10px 0px;
 }
-.ac_subitem ul li:first-child{
-	font-size:14px;
+.fC {
+	font-size:18px;
 	text-transform:none;
 	border-bottom:1px dotted #333;
-	padding-bottom:15px;
+	padding-bottom:3px;
 	margin-bottom:15px;
+	height: inherit;
 }
 span.ac_close{
 	float:right;
@@ -225,11 +226,31 @@ span.ac_close:hover{
 .resume {
 	color: white;
 }
-
-
-.ac_menu > ul > li div ul div ul a {
-	color:white;
+.headzone ul {
+	padding-left: 0;
 }
+
+.headzone ul div li  {
+	opacity: 1;
+	margin: 0;
+	text-align: left;
+	height: 20px;
+	border-bottom: none;
+}
+
+.desc{
+	padding-bottom: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.ac_subitem ul div li a {
+	opacity: 1;
+	margin: 0;
+	text-align: left;
+	height: 20px;
+	line-height: 0;
+}
+
 .linkedin {
 	color: white;
 
