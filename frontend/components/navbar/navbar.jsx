@@ -47,9 +47,9 @@ class Navbar extends React.Component {
                 <span className="ac_close"></span>
                 <h2>EvenTide</h2>
                 <ul>
-                  <li>Placeholder.</li>
-                  <li>Placeholder</li>
-                  <li>Placeholder</li>
+                  <li>EvenTide is a event scheduling app inspired by Eventbrite. It is a web app created from the ground up using React and Redux with a Rails backend.</li>
+                  <li><a href="https://eventide-eventbrite-clone.herokuapp.com" color="white">Live</a></li>
+                  <li><a href="https://github.com/ntuzer/EvenTide" color="white">Github</a></li>
                 </ul>
               </div>
             </li>
