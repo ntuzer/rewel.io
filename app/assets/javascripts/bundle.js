@@ -3739,11 +3739,7 @@ var Navbar = function (_React$Component) {
                       _react2.default.createElement(
                         'div',
                         null,
-                        _react2.default.createElement(
-                          'img',
-                          null,
-                          'placeholder'
-                        )
+                        'img goes here'
                       )
                     )
                   )
@@ -3802,11 +3798,7 @@ var Navbar = function (_React$Component) {
                       _react2.default.createElement(
                         'div',
                         null,
-                        _react2.default.createElement(
-                          'img',
-                          null,
-                          'placeholder'
-                        )
+                        'img goes here'
                       )
                     )
                   )

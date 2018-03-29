@@ -54,7 +54,7 @@ class Navbar extends React.Component {
                       <li><a href="https://github.com/ntuzer/EvenTide" color="white">Github</a></li>
                     </ul>
                     <div>
-                      <img>placeholder</img>
+                      img goes here
                     </div>
                   </div>
                 </ul>
@@ -74,7 +74,7 @@ class Navbar extends React.Component {
                       <li><a href="https://github.com/ntuzer/3D-Cube">Github</a></li>
                     </ul>
                     <div>
-                      <img>placeholder</img>
+                      img goes here
                     </div>
                   </div>
                 </ul>
