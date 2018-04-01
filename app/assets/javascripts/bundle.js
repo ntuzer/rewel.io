@@ -3681,7 +3681,25 @@ var Navbar = function (_React$Component) {
                     _react2.default.createElement(
                       'div',
                       { className: 'headzone' },
-                      _react2.default.createElement('img', { className: 'selfie', src: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg' })
+                      _react2.default.createElement('img', { className: 'selfie', src: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg' }),
+                      _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                          'ul',
+                          null,
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            'LinkedIn'
+                          ),
+                          _react2.default.createElement(
+                            'li',
+                            null,
+                            'GitHub'
+                          )
+                        )
+                      )
                     )
                   )
                 )

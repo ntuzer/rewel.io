@@ -33,7 +33,12 @@ class Navbar extends React.Component {
                   <li className="fC">Software developer experienced in React, Rails, JavaScript, HTML5 and CSS. I enjoy creating full stack apps and learning new things. Im a life long learner and in my spare time I like making practical Arduino projects written in C that are useful around the house like a house security system and a self watering garden.</li>
                   <div className="headzone">
                     <img className="selfie" src="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/rg.jpg"></img>
-
+                    <div>
+                      <ul>
+                        <li>LinkedIn</li>
+                        <li>GitHub</li>
+                      </ul>
+                    </div>
                   </div>
                 </ul>
               </div>
