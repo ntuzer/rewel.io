@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="JavaScript Projects">
+        <meta name="author" content="Elina Mishina">
+
+	<title>CNIT 133 - Ajax (Homework 8 Part 2)</title>
+
+<!-- Base Custom styles for this template -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Base Bootstrap core CSS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Link to JQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<style>
+body {
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	background-color: #D3D3D8;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header, homework
+ {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Custom page header */
+.header {
+  	padding-bottom: 20px;
+  	border-bottom: 1px solid #e5e5e5;
+}
+.header h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  margin-top: 30px;
+}
+/* Main homework area */
+.jumbotron {
+  	text-align: center;
+    margin-bottom: 15px;
+  	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron p {
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-weight: 200;
+}
+/* Space */
+.bump-space {
+	margin-top: 20px;
+}
+/* Core content area */
+#panel, #flip {
+	padding: 5px;
+	text-align: center;
+	background-color: #c0c0c0;
+	width: 450px;
+	border: solid 1px #c3c3c3;
+	margin-right: auto;
+	margin-left: auto;
+}
+#panel {
+	padding: 10px;
+	width: 450px;
+	display: none;
+	text-align: left;
+}
+/* Navigation specific */
+nav {
+	font-size:15px;
+	padding-top:10px;
+	text-align:center;
+}
+h2 {
+    font-size:30px;
+    text-align: center;
+}
+h3 {
+    font-size:24px;
+    text-align: center;
+}
+/* Table Related */
+table {
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border: 1px solid black;
+	font-size: 12px;
+}
+table td {
+	text-align: left;
+	padding: 8px 8px;
+	vertical-align: text-bottom;
+}
+.column-width {
+	width: 70px;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.bold {
+	font-weight: bold;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+</style>
+
+<script> //jquery for the info box
+	$(document).ready(function(){
+    	$("#flip").click(function(){
+        	$("#panel").slideToggle("slow");
+    	});
+	});
+</script>
+
+<script>
+function ajaxFunction() {
+	var ajaxRequest; // The variable that makes Ajax possible!
+
+	try {
+		// Opera 8.0+, Firefox, Safari
+		ajaxRequest = new XMLHttpRequest();
+	} catch (e) {
+		// Internet Explorer Browsers
+		try {
+			ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try {
+				ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e) {
+				// Something went wrong
+				alert("Your browser can't do this! It's probably too old.");
+				return false;
+			}
+		}
+	}
+	// A function that will receive data sent from the server
+	ajaxRequest.onreadystatechange = function () {
+		if (ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
+			var result = ajaxRequest.responseText;
+			var info = result.split('@');
+			document.getElementById("time").value = info[0];
+			document.getElementById("date").value = info[1];
+			document.getElementById("date1").value = info[2];
+		}
+	}
+
+
+	ajaxRequest.open("GET", "serverTime.php", true);
+	ajaxRequest.send(null);
+}
+</script>
+
+</head>
+<body>
+    <div class="content">
+        <header class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="hw8.html">Go Back</a></li>
+                    <li role="presentation"><a href="hw8-p1.html">Part 1</a></li>
+                    <li role="presentation" class="active"><a href="hw8-p2.html">Part 2</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+        <h2>Ajax</h2>
+			<h3>Part 2: A Form that Collects Data from the Server</h3>
+			<div id="flip">Click to Show/Hide Instructions</div>
+			<div id="panel">
+				<br />Create a webpage containing a form and an Ajax script that will receive data sent from the server.
+				<br /> The form should contain four input text boxes, for Name, Time, Date (day, date format), and Date (mm/dd/yy format). After the user enters their name in the Name text box and then clicks outside this text box, the Ajax script should access three php scripts on the server which will contain the Time, Date (day, date format), and Date (mm/dd/yy format) and return the Time and Date formats into their respective text boxes.
+				<br />
+			</div>
+			<h3 class="bump-space"><b>Type your name in the field below:</b></h3>
+			<form id="myform" name="myform">
+				<p>Name:
+					<input type='text' onChange="ajaxFunction();" name='username' />
+					<br /> Time:
+					<input type='text' id='time' size="30" />
+					<br /> Date:
+					<input type='text' id='date' size="30" />
+					<br /> Date:
+					<input type='text' id='date1' size="30" />
+					<br />
+				</p>
+			</form>
+		</div>
+	</div>
+		<footer class="footer">
+		<a> © 2018  Elina Mishina</a>
+    </footer>
+</body>
+</html>

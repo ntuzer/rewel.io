@@ -86,18 +86,7 @@ class Navbar extends React.Component {
               </div>
             </li>
 
-                           <li>
-              <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg">Write Away</a>
-              <div className="ac_subitem">
-                <span className="ac_close"></span>
-                <h2>Write Away</h2>
-                <ul>
-                  <li className="fC">Placeholder.</li>
-                  <li>Placeholder</li>
-                  <li>Placeholder</li>
-                </ul>
-              </div>
-            </li>
+
 
                       </ul>
         </div>
@@ -113,7 +102,18 @@ class Navbar extends React.Component {
   }
   // <script type="text/javascript" src="js/center_menu.js"></script>
 
-
+//   <li>
+// <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg">Write Away</a>
+// <div className="ac_subitem">
+// <span className="ac_close"></span>
+// <h2>Write Away</h2>
+// <ul>
+// <li className="fC">Placeholder.</li>
+// <li>Placeholder</li>
+// <li>Placeholder</li>
+// </ul>
+// </div>
+// </li>
 
 
   myScript(){

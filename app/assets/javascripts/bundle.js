@@ -3821,44 +3821,6 @@ var Navbar = function (_React$Component) {
                     )
                   )
                 )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: 'https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg' },
-                  'Write Away'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'ac_subitem' },
-                  _react2.default.createElement('span', { className: 'ac_close' }),
-                  _react2.default.createElement(
-                    'h2',
-                    null,
-                    'Write Away'
-                  ),
-                  _react2.default.createElement(
-                    'ul',
-                    null,
-                    _react2.default.createElement(
-                      'li',
-                      { className: 'fC' },
-                      'Placeholder.'
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Placeholder'
-                    )
-                  )
-                )
               )
             )
           )
@@ -3876,6 +3838,19 @@ var Navbar = function (_React$Component) {
       );
     }
     // <script type="text/javascript" src="js/center_menu.js"></script>
+
+    //   <li>
+    // <a href="https://raw.githubusercontent.com/ntuzer/rewel.io/master/app/assets/images/bg/bg8.jpg">Write Away</a>
+    // <div className="ac_subitem">
+    // <span className="ac_close"></span>
+    // <h2>Write Away</h2>
+    // <ul>
+    // <li className="fC">Placeholder.</li>
+    // <li>Placeholder</li>
+    // <li>Placeholder</li>
+    // </ul>
+    // </div>
+    // </li>
 
 
   }, {
