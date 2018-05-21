@@ -1,0 +1,135 @@
+@keyframes nametransition {
+  0% {
+    opacity: 0;
+  //   transform: scale(0.5);
+  // }
+  // 50% {
+  //   transform: scale(1.4);
+  }
+  100% {
+    // transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  // display: block;
+  // width: 100%;
+}
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  top: 0;
+  z-index: -10;
+  transform: scaleX(-1);
+}
+
+.navbar div {
+  display: block;
+  margin-top: 60vh;
+  font-family: 'Caveat';
+  box-shadow: 10px 10px 20px black;
+  background: #d44f3a; //#c45536;d44f3a
+  height: 200px;
+  width: 100%;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+  margin-left: 60px;
+  margin-bottom: 10vh;
+  transform: skewX(-25deg);
+  animation: nametransition 2s;
+}
+
+#nombre {
+  transform: skewX(20deg);
+  color: white;
+  font-size: 100%;
+  // padding-right: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 5px 5px 20px #fff;
+    color: #2BB0C5;
+}
+
+.title {
+
+  position: sticky;
+  overflow: hidden;
+  color: white;
+  width: 800px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.title img {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  margin-right: 10vw;
+
+}
+
+.navbar h3 {
+  margin-top: 200px;
+  height: 300px;
+  width: auto;
+  font-size: 200px;
+  color: white;
+  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+}
+
+
+@media only screen and (max-width : 480px) {
+  .navbar div {
+    height: 110px;
+    width: 250px;
+  }
+  #nombre {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+  .navbar div {
+    height: 180px;
+    width: 350px;
+  }
+  #nombre {
+    font-size: 8em;
+  }
+}
+
+
+
+
+@media only screen and (min-width : 768px) {
+  .navbar div {
+    height: 220px;
+    width: 500px;
+  }
+  #nombre {
+    font-size: 10em;
+  }
+}
+// @media screen and (min-width: 1200px) {
+//   #nombre {
+//     font-size: 100%;
+//   }
+// }
+// @media screen and (min-width: 1600px) {
+//
+//   .navbar div {
+//     height: 200px;
+//     width: 40%;
+//   }
+//
+//   #nombre {
+//     font-size: 100%;
+//   }
+// }

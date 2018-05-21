@@ -7,13 +7,15 @@ import {
   HashRouter,
   Refresh
 } from 'react-router-dom';
-import NavbarContainer from './navbar/navbar_container';
+import Navbar from './navbar/navbar';
+import About from './about/about';
 
 const App = (store) => {
 
   return (
     <div>
-      <Route path="/" component={NavbarContainer} />
+      <Route path="/" component={Navbar} />
+      <Route path="/" component={About} />
     </div>
   );
 };
